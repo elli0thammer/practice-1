@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@800&family=PT+Sans&display=swap"
+        rel="stylesheet">
+
+  <title>Тестовое-1</title>
+</head>
+<body class="">
+
+<div class="main-page container">
+  <h1 class="main-page__text">Нажмите на кнопку,<br>чтобы открыть модальное окно!</h1>
+  <button class="main-page__open-button">Написать</button>
+</div>
+
+<div class="modal-container modal-container--close">
+  <div class="modal">
+    <h2 class="modal__title">Стать партнёром проекта</h2>
+
+    <form class="auth-form" action="#" method="post">
+
+      <div class="modal__wrap">
+        <div class="field-group modal__company-file">
+          <p class="modal__company-text"><span>✱ </span>Логотип (jpeg, png)</p>
+
+          <div class="modal__img-upload-preview">
+            <div class="modal__button-file">
+              <label for="company-upload-file" class="visually-hidden">Логотип</label>
+              <input class="modal__img-upload-input visually-hidden" type="file" id="company-upload-file"
+                     name="company-file-name" accept="image/png, image/jpeg" required>
+              <span class="modal__img-text">Выберите<br> файл</span>
+            </div>
+
+            <img class="modal__img-user" src="img/avatar.png" alt="Предварительный просмотр фотографии">
+            <div class="modal__close-button-img">
+              <button class="modal__img-upload-cancel" type="reset" id="upload-cancel">
+                <span class="visually-hidden">Закрыть</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal__inner">
+
+          <div class="field-group">
+            <label class="modal__label" for="company-name"><span>✱ </span>Название организации</label>
+            <input class="modal__input modal-info" type="text" id="company-name" name="company-name"
+                   placeholder="Введите название организации" value="АВЦ" required>
+          </div>
+
+          <div class="field-group">
+            <label class="modal__label" for="company-phone"><span>✱ </span>Телефон</label>
+            <input class="modal__input modal-info" type="tel" id="company-phone" name="company-phone"
+                   placeholder="Введите номер телефона" value="+7 933 848-34-33" required>
+          </div>
+
+          <div class="field-group">
+            <label class="modal__label" for="company-email"><span>✱ </span>E-mail:</label>
+            <input class="modal__input modal-info" type="email" id="company-email" name="company-email"
+                   placeholder="Введите e-mail" value="avc@gmail.com" required>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="modal__container">
+
+        <div class="field-group">
+          <label class="modal__label" for="company-direction"><span>✱ </span>Направление</label>
+          <input class="modal__input modal-info" type="text" id="company-direction"
+                 name="company-direction"
+                 placeholder="Введите направление" value="Экология" required>
+        </div>
+
+        <div class="field-group social">
+          <label class="modal__label visually-hidden" for="company-site">Веб-сайт</label>
+          <input class="modal__input social__link social__link--site" type="text" id="company-site" name="company-site"
+                 placeholder="Ссылка на Ваш сайт" value="avc.ru">
+        </div>
+
+        <div class="field-group social">
+          <label class="modal__label visually-hidden" for="company-vk">Группа вк</label>
+          <input class="modal__input social__link social__link--vk" type="text" id="company-vk" name="company-vk"
+                 placeholder="Ссылка на Вашу группу вк" value="vk.com/shans">
+        </div>
+
+        <div class="field-group social">
+          <label class="modal__label visually-hidden" for="company-ok">Группа в одноклассниках</label>
+          <input class="modal__input social__link social__link--ok" type="text" id="company-ok" name="company-ok"
+                 placeholder="Ссылка на Вашу группу в одноклассниках" value="ok.com/shans">
+        </div>
+
+        <div class="field-group social">
+          <label class="modal__label visually-hidden" for="company-fb">Группа в фейсбуке</label>
+          <input class="modal__input social__link social__link--fb" type="text" id="company-fb" name="company-fb"
+                 placeholder="Ссылка на Вашу группу в фейсбуке" value="facebook.com/shans">
+        </div>
+
+        <div class="field-group social">
+          <label class="modal__label visually-hidden" for="company-inst">Страница инстаграма</label>
+          <input class="modal__input social__link social__link--inst" type="text" id="company-inst" name="company-inst"
+                 placeholder="Ссылка на Вашу страницу в инстаграме" value="instagram.com/shans">
+        </div>
+
+        <div class="field-group social">
+          <label class="modal__label visually-hidden" for="company-youtube">Канал Ютуба</label>
+          <input class="modal__input social__link social__link--youtube" type="text" id="company-youtube"
+                 name="company-youtube"
+                 placeholder="Ссылка на Ваш канал на Ютубе" value="youtube.com/shans">
+        </div>
+
+        <div class="field-group">
+          <label class="modal__label" for="company-manager">Руководитель</label>
+          <input class="modal__input modal-info" type="text" id="company-manager" name="company-manager"
+                 placeholder="Введите ФИО руководителя" value="Александров Иван Васильевич">
+        </div>
+
+      </div>
+
+      <div class="modal__button">
+        <button class="modal__submit" type="submit">Стать партнёром проекта</button>
+        <button class="modal__close-button" type="button">Отменить</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
